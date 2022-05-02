@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    账号<input type="text" name="username" maxlength="3"/><br/>
+    密码<input type="password" name="password"/><br/>
+    性别<input type="radio" name="sex" value="1" checked>男
+        <input type="radio" name="sex" value="0">女<br/>
+    爱好<select multiple size="2" name="aihao">
+    <option value="football" >足球</option>
+    <option value="basketball" >篮球</option>
+    <option value="badminton">羽毛球</option>
+    <option value="pingpang">乒乓球</option>
+    <br/><textarea cols="60" rows="5" name="jianjie"></textarea>
+
+    <!--randonly标签标识和disabled标签都是只读的-->
+    <!--但是readonl能够将value传递到服务器上，而di'sabied不能够传递数据-->
+    <br/>机构代码<input type="text" name="code" value="123456" readonly/>
+    <br/>用户代码<input type="text" name="userCode" value="654321" disabled>
+    <br/><input type="submit" name="提交" value="登录"/>
+        <input type="reset" value="重置"/>
+</select>
+</form>
+</body>
+</html>
